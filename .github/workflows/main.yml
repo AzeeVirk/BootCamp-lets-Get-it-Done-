@@ -28,7 +28,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Installing surge
-        run: surge
+        run: npm install surge
       - name: Deploying Surge
         run: surge ./azadi-virk.surge.sh --token $ {{ secret.TOKEN}}
           echo Add other actions to build,
