@@ -30,6 +30,6 @@ jobs:
       - name: Installing surge
         run: sudo npm install --global surge
       - name: Deploying Surge
-        run: 
+        run: surge ./ azadi-virk.surge.sh --token $ {{secrets. SURGE_TOKEN}}
           echo Add other actions to build,
           echo test, and deploy your project.
